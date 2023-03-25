@@ -1,6 +1,13 @@
 {
-  "extends": "@react-native-community",
-  "rules": {
-    "quotes": [2, "double", { "avoidEscape": true }]
+  "extends": ["plugin:react/recommended", "plugin:react-native/all"],
+  "plugins": ["jsx-a11y"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "rules": {
+      "quotes": [2, "double", { "avoidEscape": true }]
+    }
   }
 }
